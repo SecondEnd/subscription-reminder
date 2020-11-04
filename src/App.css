@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub-app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  width: 900px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(235, 27, 101, 1) 0%,
+    rgba(97, 41, 107, 1) 100%
+  );
+  margin-bottom: 64px;
+}
+
+.sub-name {
+  height: 40px;
+  width: 200px;
+  margin-right: 32px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: inherit;
+}
+
+.sub-name::placeholder {
+  color: #f2f2f2;
+}
+
+.sub-date {
+  height: 40px;
+  width: 150px;
+  padding-left: 12px;
+  margin-right: 32px;
+  border: none;
+  background-color: inherit;
+}
+
+.sub-type {
+  height: 40px;
+  width: 100px;
+  margin-right: 32px;
+  padding-left: 12px;
+  border: none;
+  background-color: inherit;
+}
+
+.btn-submit {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-icon {
+  background-color: inherit;
+}
+
+.form-container form > input:focus {
+  outline: none;
+}
+
+.btn-submit:hover {
+  transition: background-color 0.5s ease;
+  background-color: #1c1c1c;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.sub-type:focus {
+  outline: none;
+}
+
+.subs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

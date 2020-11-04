@@ -1,0 +1,26 @@
+.sub-card {
+  display: flex;
+  border-bottom: 1px solid rgba(235, 27, 101, 1);
+  width: 600px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-data {
+  display: flex;
+  align-items: center;
+}
+
+.sub-data > p {
+  width: 100px;
+}
+
+.p-sub-name {
+  font-weight: 900;
+  margin-right: 24px;
+}
+
+.p-sub-date {
+  margin-right: 30px;
+}
